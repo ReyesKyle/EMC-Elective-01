@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ElectiveUnityScript : MonoBehaviour
 {
+
+    [SerializeField] private float testing = 1f; 
     // Start is called before the first frame update
     void Start()
     {
@@ -15,4 +17,5 @@ public class ElectiveUnityScript : MonoBehaviour
     {
         
     }
+
 }
