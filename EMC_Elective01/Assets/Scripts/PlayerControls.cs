@@ -6,17 +6,17 @@ using TMPro;
 public class PlayerControls : MonoBehaviour
 {
     public float speed;
-    //public TextMeshProUGUI achieveCount1;
+    public TextMeshProUGUI AchieveText;
     
     private Vector2 move;
 
     public void Update()
     {
         move = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")) * speed;
-        /*if (Input.GetButtonDown("Horizontal") || Input.GetButtonDown("Vertical"))
+        if (Input.GetButtonDown("Horizontal") || Input.GetButtonDown("Vertical"))
         {
-            achieveCount1.text = "DONE";
-        }*/
+         AchieveText.text = "Complete";
+        }
     }
 
     public void FixedUpdate()
@@ -26,9 +26,9 @@ public class PlayerControls : MonoBehaviour
 
     public void count()
     {
-        /*if(Input.GetKeyDown("up") || Input.GetKeyDown("down")|| Input.GetKeyDown("left")|| Input.GetKeyDown("right"))
+        if(Input.GetKeyDown("up") || Input.GetKeyDown("down")|| Input.GetKeyDown("left")|| Input.GetKeyDown("right"))
         {
-            achieveCount1.text = "DONE";
-        }*/
+         AchieveText.text = "Complete";
+        }
     }
 }
